@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://prepogy.in/</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/blog</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/foundation</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/intermediate/group1</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/intermediate/group2</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/final/group3</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/final/group4</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/1</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/2</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/3</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/4</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/5</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/5?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/6</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/6?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/7</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/7?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/8</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/8?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/8?mode=sjc</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/9</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/9?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/10</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/10?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/11</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/11?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/12</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/12?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/13</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/14</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/15</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/16</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/17</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/17?mode=pyq</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/18</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/19</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/20A</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/20B</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/quiz/20C</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/about</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/privacy</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://prepogy.in/terms</loc>
+  <lastmod>2026-01-09T17:51:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+</urlset>

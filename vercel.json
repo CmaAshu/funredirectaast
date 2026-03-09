@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/((?!blog/|audit|paper[0-9].*\\.html|robots\\.txt|sitemap\\.xml).*)", "destination": "/index.html" }]
+}
