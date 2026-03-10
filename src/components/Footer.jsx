@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="py-10 text-center shrink-0 border-t border-slate-100 mt-10">
 
       {/* ── Floating FAB cluster ── */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3">
+      <div className="fixed bottom-6 right-6 z-50 hidden md:flex flex-col items-center gap-3">
         {/* Instagram FAB */}
         <a href="https://www.instagram.com/prepogy.in/" target="_blank" rel="noopener noreferrer"
           aria-label="Follow us on Instagram"

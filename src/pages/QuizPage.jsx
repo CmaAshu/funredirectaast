@@ -98,6 +98,7 @@ export default function QuizPage() {
   const [slideKey, setSlideKey]     = useState(0)
   const [showReport, setShowReport] = useState(false)
   const [showLoginNudge, setShowLoginNudge] = useState(false)
+  const [focusMode, setFocusMode] = useState(false)
 
   // Touch / swipe
   const touchStartX = useRef(null)
@@ -410,33 +411,35 @@ export default function QuizPage() {
 
       <div className="max-w-2xl mx-auto px-4 pb-20 w-full">
         {/* Header */}
-        <div className="pt-4 pb-2 flex flex-col items-center">
-          <nav className="breadcrumb self-start">
-            <a href="/" onClick={e=>{e.preventDefault();navigate('/')}} className="hover:text-primary transition-colors">Home</a>
-            <i className="fas fa-chevron-right text-[8px]" />
-            <a href={meta.breadcrumb[1]} onClick={e=>{e.preventDefault();navigate(meta.breadcrumb[1])}} className="hover:text-primary transition-colors">{meta.breadcrumb[0]}</a>
-            <i className="fas fa-chevron-right text-[8px]" />
-            <span className="text-primary font-bold">{meta.shortTitle}</span>
-          </nav>
+        {!focusMode && (
+          <div className="pt-4 pb-2 flex flex-col items-center">
+            <nav className="breadcrumb self-start">
+              <a href="/" onClick={e=>{e.preventDefault();navigate('/')}} className="hover:text-primary transition-colors">Home</a>
+              <i className="fas fa-chevron-right text-[8px]" />
+              <a href={meta.breadcrumb[1]} onClick={e=>{e.preventDefault();navigate(meta.breadcrumb[1])}} className="hover:text-primary transition-colors">{meta.breadcrumb[0]}</a>
+              <i className="fas fa-chevron-right text-[8px]" />
+              <span className="text-primary font-bold">{meta.shortTitle}</span>
+            </nav>
 
-          {/* Mode badge */}
-          <div className="mt-2 mb-3 text-xs font-bold px-4 py-1.5 rounded-full bg-primary/10 text-primary border border-primary/20">
-            {modeLabel}
-          </div>
+            {/* Mode badge */}
+            <div className="mt-2 mb-3 text-xs font-bold px-4 py-1.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+              {modeLabel}
+            </div>
 
-          {/* Theme switcher */}
-          <div className="flex items-center gap-2 bg-black/5 p-1.5 rounded-2xl backdrop-blur-sm mb-4">
-            {['light','dark','black'].map(t => (
-              <button key={t} onClick={() => applyTheme(t)} className={`theme-btn ${theme === t ? 'active' : ''}`}
-                title={t === 'light' ? 'Light Mode' : t === 'dark' ? 'Dark Mode' : 'Jet Black'}>
-                <i className={`fas ${t === 'light' ? 'fa-sun' : t === 'dark' ? 'fa-moon' : 'fa-circle'}`} />
-              </button>
-            ))}
+            {/* Theme switcher */}
+            <div className="flex items-center gap-2 bg-black/5 p-1.5 rounded-2xl backdrop-blur-sm mb-4">
+              {['light','dark','black'].map(t => (
+                <button key={t} onClick={() => applyTheme(t)} className={`theme-btn ${theme === t ? 'active' : ''}`}
+                  title={t === 'light' ? 'Light Mode' : t === 'dark' ? 'Dark Mode' : 'Jet Black'}>
+                  <i className={`fas ${t === 'light' ? 'fa-sun' : t === 'dark' ? 'fa-moon' : 'fa-circle'}`} />
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Top nav */}
-        {!showResults && (
+        {!showResults && !focusMode && (
           <div className="flex justify-between items-center mb-6 gap-3">
             <button onClick={() => navigate(-1)} className="btn-home animate-pulse-glow border-primary text-primary">
               <i className="fas fa-arrow-left" /> <span className="hidden sm:inline">Back</span>
@@ -454,7 +457,7 @@ export default function QuizPage() {
 
         {/* Stats bar */}
         {!showResults && (
-          <div className="bg-surface rounded-3xl p-5 flex shadow-soft mb-4 border border-slate-100/50 divide-x animate-fade-in-up"
+          <div className={`bg-surface rounded-3xl p-5 flex shadow-soft mb-4 border border-slate-100/50 divide-x animate-fade-in-up ${focusMode ? 'mt-6' : ''}`}
             style={{ backgroundColor:'var(--color-surface)', borderColor:'var(--color-border)' }}>
             {[
               { label:'Correct',  val: score.c, color:'text-success' },
@@ -470,7 +473,7 @@ export default function QuizPage() {
         )}
 
         {/* Question Navigator Grid */}
-        {!showResults && questions.length > 1 && (
+        {!showResults && !focusMode && questions.length > 1 && (
           <div className="mb-6 p-4 rounded-3xl border animate-fade-in-up"
             style={{ backgroundColor:'var(--color-surface)', borderColor:'var(--color-border)' }}>
             <p className="text-[9px] font-extrabold uppercase tracking-widest opacity-50 mb-3 text-center">Jump to Question</p>
@@ -516,6 +519,12 @@ export default function QuizPage() {
                 Progress • {currentQIdx + 1} of {questions.length}
               </p>
               <div className="flex items-center gap-2">
+                {/* Focus mode toggle */}
+                <button onClick={() => setFocusMode(f => !f)} title={focusMode ? 'Exit Focus Mode' : 'Focus Mode'}
+                  className={`text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 transition-all ${focusMode ? 'bg-primary text-white border border-primary' : 'text-slate-500 border border-slate-200 bg-slate-50 hover:bg-slate-100'}`}>
+                  <i className={`fas ${focusMode ? 'fa-compress' : 'fa-expand'} text-[9px]`} />
+                  {focusMode ? 'Exit Focus' : 'Focus'}
+                </button>
                 {/* Report button */}
                 <button onClick={() => setShowReport(true)} title="Report an issue"
                   className="text-[10px] font-bold text-orange-500 border border-orange-200 bg-orange-50 px-2.5 py-1 rounded-full flex items-center gap-1 hover:bg-orange-100 transition-all">
@@ -575,16 +584,6 @@ export default function QuizPage() {
                 </span>
               </div>
             </div>
-
-            {/* Explanation */}
-            {attempted[currentQIdx] && (
-              <div className="mt-8 p-6 bg-black/5 rounded-3xl border-l-4 border-primary animate-fade-in-up">
-                <h4 className="text-xs font-bold uppercase text-primary tracking-wide mb-2">Explanation</h4>
-                <p className="text-sm opacity-80 leading-relaxed italic" style={{ color:'var(--color-text-muted)' }}>
-                  {q.e || 'Reference: Official CMA Study Material.'}
-                </p>
-              </div>
-            )}
 
             {/* Nav buttons */}
             <div className="flex justify-between mt-10 pt-8 border-t border-black/5">
