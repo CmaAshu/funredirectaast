@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Allow essential assets (important for rendering & SEO)
+Allow: /js/
+Allow: /css/
+Allow: /assets/
+Allow: /images/
+
+# Block nothing critical (keep crawl open)
+Disallow:
+
+# Sitemap location
+Sitemap: https://prepogy.in/sitemap.xml
